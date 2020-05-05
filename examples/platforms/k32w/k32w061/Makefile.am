@@ -44,6 +44,7 @@ LIB_FLAGS                                                                       
     -DCPU_JN518X_REV=2                                                                                                 \
     -DJENNIC_CHIP_FAMILY_JN518x                                                                                        \
     -DJENNIC_CHIP_FAMILY_NAME=_JN518x                                                                                  \
+    -DUSE_RTOS=0                                                                                                       \
     -I$(top_srcdir)/include                                                                                            \
     -I$(top_srcdir)/examples/platforms                                                                                 \
     -I$(top_srcdir)/src/core                                                                                           \

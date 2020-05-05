@@ -124,7 +124,7 @@ void K32WAlarmProcess(otInstance *aInstance)
 {
     if (sEventFired)
     {
-#if OPENTHREAD_ENABLE_DIAG
+#if OPENTHREAD_CONFIG_DIAG_ENABLE
 
         if (otPlatDiagModeGet())
         {

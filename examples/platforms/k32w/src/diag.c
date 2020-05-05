@@ -37,7 +37,7 @@
 #include <openthread/platform/alarm-milli.h>
 #include <openthread/platform/radio.h>
 
-#if OPENTHREAD_ENABLE_DIAG
+#if OPENTHREAD_CONFIG_DIAG_ENABLE
 
 /**
  * Diagnostics mode variables.
