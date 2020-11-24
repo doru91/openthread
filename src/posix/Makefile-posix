@@ -30,6 +30,17 @@
 
 .NOTPARALLEL:
 
+AR                              = arm-linux-gnueabi-ar
+CCAS                            = arm-linux-gnueabi-as
+CPP                             = arm-linux-gnueabi-cpp
+CC                              = arm-linux-gnueabi-gcc
+CXX                             = arm-linux-gnueabi-g++
+LD                              = arm-linux-gnueabi-ld
+STRIP                           = arm-linux-gnueabi-strip
+NM                              = arm-linux-gnueabi-nm
+RANLIB                          = arm-linux-gnueabi-ranlib
+OBJCOPY                         = arm-linux-gnueabi-objcopy
+
 COVERAGE                             ?= 0
 DEBUG                                ?= 0
 
@@ -166,8 +177,7 @@ ResultPath                      = output/posix
 TopResultDir                    = $(ResultPath)
 AbsTopResultDir                 = $(PWD)/$(TopResultDir)
 
-TargetTuple                     = $(shell ${AbsTopSourceDir}/third_party/nlbuild-autotools/repo/third_party/autoconf/config.guess | sed -e 's/[[:digit:].]*$$//g')
-
+TargetTuple                     = arm-linux-gnueabi
 ifndef BuildJobs
 BuildJobs := $(shell getconf _NPROCESSORS_ONLN)
 endif
